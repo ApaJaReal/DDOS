@@ -75,9 +75,9 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	ApaJa Dos Script  \n
-	IP mu keliatan Jadi Aku Sarankan Menggunakan VPN  \n
-        usage : python3 ApaJa.py [-s] [-p] [-t]
+	print (''' \033[92m	ApaJa Dos Script 
+	IPmu keliatan Jadi Aku Sarankan Menggunakan VPN 
+        usage : python3 DDos.py [-s] [-p] [-t]
 	-h : help
 	-s : server ip
 	-p : port default 80
