@@ -75,7 +75,14 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	ApaJa Dos Script 
+	print (''' \033[92m	
+        _                    _
+           / \   _ __   __ _    | | __ _
+          / _ \ | '_ \ / _` |_  | |/ _` |
+         / ___ \| |_) | (_| | |_| | (_| |
+        /_/   \_\ .__/ \__,_|\___/ \__,_|
+                |_|
+        ApaJa Dos Script 
 	IPmu keliatan Jadi Aku Sarankan Menggunakan VPN 
         usage : python3 DDos.py [-s] [-p] [-t]
 	-h : help
