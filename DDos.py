@@ -76,22 +76,20 @@ def dos2():
 
 def usage():
 	print (''' \033[92m	
-                         _
-   / \   _ __   __ _    | | __ _
-  / _ \ | '_ \ / _` |_  | |/ _` |
- / ___ \| |_) | (_| | |_| | (_| |
-/_/   \_\ .__/ \__,_|\___/ \__,_|
-        |_|
-DDos Script v.1 
-Pembuat Tidak Bertanggung Jawab!
-Ipmu Terlihat Aku Sarankan Pake VPN.
-usage : python3 hammer.py [-s] [-p] [-t]
--h : help
--s : server ip
--p : port default 80
--t : turbo default 135 \033[0m''')
-sys.exit()
-
+        _                    _
+           / \   _ __   __ _    | | __ _
+          / _ \ | '_ \ / _` |_  | |/ _` |
+         / ___ \| |_) | (_| | |_| | (_| |
+        /_/   \_\ .__/ \__,_|\___/ \__,_|
+                |_|
+        ApaJa Dos Script 
+	IPmu keliatan Jadi Aku Sarankan Menggunakan VPN 
+        usage : python3 DDos.py [-s] [-p] [-t]
+	-h : help
+	-s : server ip
+	-p : port default 80
+	-t : turbo default 135 \033[0m''')
+	sys.exit()
 
 def get_parameters():
 	global host
